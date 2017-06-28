@@ -63,6 +63,15 @@ nav ul li a{
   text-decoration: none;
 }
 
+.menu-mobile{
+  display: none;
+}
+
+.menu-mobile li{
+  color: white;
+  text-decoration: none;
+}
+
 /*Headline*/
 
 #white-band{
@@ -182,5 +191,79 @@ footer{
   .info p{
     text-align: justify;
   }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .menu-desktop{
+    display: none;
+  }
+
+  .menu-mobile{
+    display: block;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  header{
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .headline{
+    background-color: white;
+    display: inline-block;
+    margin: 9rem auto 0;
+    padding: 1rem;
+    line-height: 1.2;
+    width: 100%;
+  }
+
+  .headline h1{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .skills{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  .items{
+    height: auto;
+    font-size: 0.77rem;
+    margin: 0.77rem;
+  }
+
+  #informations{
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  .info{
+    width: 100%;
+    font-size: 0.77rem;
+  }
+
+  .info p{
+    margin-bottom: 4rem;
+    padding: 1rem;
+  }
+
+    footer span{
+      display: none;
+    }
+
+    #footer-items{
+      justify-content: center;
+
+    }
+
 
 }
